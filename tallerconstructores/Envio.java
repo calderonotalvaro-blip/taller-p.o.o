@@ -8,13 +8,20 @@ package tallerconstructores;
  *
  * @author estuam
  */
+
 public class Envio {
+
     public static void main(String[] args) {
-        Paquete paquete1 =  new Paquete();
+      
+        Paquete p1 = new Paquete("P-001", "Manizales", 3.0, true);
+
         
-        System.out.println(paquete1.codigo);
-        System.out.println(paquete1.destino);
-        System.out.println(paquete1.peso);
-        System.out.println(paquete1.asegurado); 
+        Paquete p2 = new Paquete("P-002", "Pereira");
+        Paquete p3 = new Paquete("P-003");
+
+       
+        p1.mostrarInformacion();
+        p2.mostrarInformacion();
+        p3.mostrarInformacion();
     }
 }
